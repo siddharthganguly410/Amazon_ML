@@ -1,0 +1,124 @@
+{
+  "training_sample": 40000,
+  "fit_entities": 32000,
+  "tuning_entities": 4000,
+  "holdout_entities": 4000,
+  "training_candidate_pairs": 4840012,
+  "threshold": 0.5700000000000003,
+  "parameters": {
+    "n_estimators": 700,
+    "num_leaves": 63,
+    "learning_rate": 0.04,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.9,
+    "reg_lambda": 2,
+    "n_jobs": 8,
+    "random_state": 2026,
+    "verbosity": -1
+  },
+  "trials": [
+    {
+      "parameters": {
+        "n_estimators": 450,
+        "num_leaves": 31,
+        "learning_rate": 0.045,
+        "min_child_samples": 40,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 2,
+        "n_jobs": 8,
+        "random_state": 2026,
+        "verbosity": -1
+      },
+      "threshold": 0.5300000000000002,
+      "tuning": {
+        "macro_f0.5": 0.9343411281612418,
+        "pair_precision": 0.9655822725129656,
+        "pair_recall": 0.8807970754784603,
+        "blocking_recall": 0.9678159271736793,
+        "entities": 4000
+      }
+    },
+    {
+      "parameters": {
+        "n_estimators": 700,
+        "num_leaves": 63,
+        "learning_rate": 0.04,
+        "min_child_samples": 40,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 2,
+        "n_jobs": 8,
+        "random_state": 2026,
+        "verbosity": -1
+      },
+      "threshold": 0.5700000000000003,
+      "tuning": {
+        "macro_f0.5": 0.9362210734296653,
+        "pair_precision": 0.9691387183120769,
+        "pair_recall": 0.8823740233675006,
+        "blocking_recall": 0.9678159271736793,
+        "entities": 4000
+      }
+    },
+    {
+      "parameters": {
+        "n_estimators": 1000,
+        "num_leaves": 31,
+        "learning_rate": 0.035,
+        "min_child_samples": 40,
+        "colsample_bytree": 0.9,
+        "reg_lambda": 2,
+        "n_jobs": 8,
+        "random_state": 2026,
+        "verbosity": -1
+      },
+      "threshold": 0.6300000000000003,
+      "tuning": {
+        "macro_f0.5": 0.9356330287965697,
+        "pair_precision": 0.9728326008789453,
+        "pair_recall": 0.8726972976847538,
+        "blocking_recall": 0.9678159271736793,
+        "entities": 4000
+      }
+    }
+  ],
+  "holdout_policy": "Final 4,000 entities excluded from all fitting and threshold selection. Score evaluates the delivered model trained on 36,000 entities, using the 2,000-posting inference policy chosen on development data. All 40,000 exclude the earlier 30,000 sample and 2,000 development entities.",
+  "broad_policy_pre_refit_holdout": {
+    "macro_f0.5": 0.9350600547094955,
+    "pair_precision": 0.9696361153506305,
+    "pair_recall": 0.8788496541681835,
+    "blocking_recall": 0.9665817255187478,
+    "entities": 4000
+  },
+  "inference_posting_limit": 2000,
+  "training_posting_limit": 5000,
+  "tuning": {
+    "macro_f0.5": 0.9352527211898084,
+    "pair_precision": 0.9700878373031574,
+    "pair_recall": 0.8787183714429073,
+    "blocking_recall": 0.9625833273600459,
+    "entities": 4000
+  },
+  "untouched_holdout": {
+    "macro_f0.5": 0.9316320829036008,
+    "pair_precision": 0.9692457105859501,
+    "pair_recall": 0.8719330178376411,
+    "blocking_recall": 0.9585001820167456,
+    "entities": 4000
+  },
+  "country_holdout": {
+    "india": {
+      "macro_f0.5": 0.9008552372291612,
+      "pair_precision": 0.9483160347384029,
+      "pair_recall": 0.8306122448979592,
+      "blocking_recall": 0.9335807050092765,
+      "entities": 1588
+    },
+    "us": {
+      "macro_f0.5": 0.9518947822945665,
+      "pair_precision": 0.9821872953503602,
+      "pair_recall": 0.8986219292989814,
+      "blocking_recall": 0.9745955662073098,
+      "entities": 2412
+    }
+  }
+}

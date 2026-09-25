@@ -1,0 +1,25 @@
+{
+  "train": {
+    "countries": {
+      "US": 1323633,
+      "India": 883188
+    },
+    "missing": {
+      "business_name": 0,
+      "business_address": 0,
+      "country": 0
+    }
+  },
+  "test": {
+    "countries": {
+      "US": 663106,
+      "France": 259452,
+      "India": 809986
+    },
+    "missing": {
+      "business_name": 0,
+      "business_address": 0,
+      "country": 0
+    }
+  }
+}

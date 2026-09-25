@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "references": 1732544,
+  "candidate_pairs": 201156082,
+  "matched_pairs": 6697611,
+  "singletons": 102567,
+  "checks": [
+    "exact headers",
+    "one row per input reference in original order",
+    "no duplicate reference IDs across the full output",
+    "no duplicate target IDs",
+    "every target ID exists",
+    "matches subset of candidates"
+  ]
+}

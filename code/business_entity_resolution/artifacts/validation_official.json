@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "batches": 70,
+  "rows": 1732544,
+  "batch_size": 25000,
+  "note": "Unmodified official validator checks both outputs in bounded-memory batches. Global coverage and exact target-ID existence checked separately by validate_streaming.py."
+}

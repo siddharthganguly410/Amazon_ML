@@ -1,0 +1,11 @@
+{
+  "references": 1732544,
+  "candidate_pairs": 201156082,
+  "matched_pairs": 6697611,
+  "singletons": 102567,
+  "countries": {
+    "us": 663106,
+    "france": 259452,
+    "india": 809986
+  }
+}
